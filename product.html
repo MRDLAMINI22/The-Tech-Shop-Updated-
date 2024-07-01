@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            <li><a href="locations.html">locations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul>
+            <li><a href="index.html"><img src="Images/Tech Shop.png"></a></li>
+            <li class="hideOnMobile"><a href="locations.html">locations</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+          </ul>
+        </nav>
+      
+        <script>
+          function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+          }
+          function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+          }
+        </script>
+<div class="container">
+
+  <h3 class="title"> Tech Shop </h3>
+
+  <div class="products-container">
+
+     <div class="product" data-name="p-1">
+        <img src="Images/Delta.jpg" alt="">
+        <h3>EcoFlow Delta</h3>
+        <div class="price">$1,271.80</div>
+     </div>
+
+     <div class="product" data-name="p-2">
+        <img src="Images/mini.jpg" alt="">
+        <h3>Bluetooth Mini Keyboard</h3>
+        <div class="price">$19.99</div>
+     </div>
+
+     <div class="product" data-name="p-3">
+        <img src="Images/tv box.jpg" alt="">
+        <h3>Skyworth Tv Box</h3>
+        <div class="price">$190</div>
+     </div>
+
+     <div class="product" data-name="p-4">
+        <img src="images/cover-picture-gps300.png" alt="">
+        <h3>Gizzu 300w</h3>
+        <div class="price">$345</div>
+     </div>
+
+  </div>
+
+</div>
+
+<div class="products-preview">
+
+  <div class="preview" data-target="p-1">
+     <i class="fas fa-times"></i>
+     <img src="Images/Delta.jpg" alt="">
+     <h3>EcoFlow Delta</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>( 250 )</span>
+     </div>
+     <p>Heavy duty portable power station</p>
+     <div class="price">$1,271.80</div>
+     <div class="buttons">
+        <a href="#" class="buy">buy now</a>
+        <a href="#" class="cart">add to cart</a>
+     </div>
+  </div>
+
+  <div class="preview" data-target="p-2">
+     <i class="fas fa-times"></i>
+     <img src="images/mini.jpg" alt="">
+     <h3>Mini Keyboard</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>( 250 )</span>
+     </div>
+     <p>Pairs well with the tv box</p>
+     <div class="price">$19</div>
+     <div class="buttons">
+        <a href="#" class="buy">buy now</a>
+        <a href="#" class="cart">add to cart</a>
+     </div>
+  </div>
+
+  <div class="preview" data-target="p-3">
+     <i class="fas fa-times"></i>
+     <img src="images/tv box.jpg" alt="">
+     <h3>Skyworth Tv Box</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>( 250 )</span>
+     </div>
+     <p>Multi Entertainment System With free streaming apps</p>
+     <div class="price">$190</div>
+     <div class="buttons">
+        <a href="#" class="buy">buy now</a>
+        <a href="#" class="cart">add to cart</a>
+     </div>
+  </div>
+
+  <div class="preview" data-target="p-4">
+     <i class="fas fa-times"></i>
+     <img src="images/cover-picture-gps300.png" alt="">
+     <h3>Gizzu 300w</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>( 250 )</span>
+     </div>
+     <p>Portable Power Station</p>
+     <div class="price">$345</div>
+     <div class="buttons">
+        <a href="#" class="buy">buy now</a>
+        <a href="#" class="cart">add to cart</a>
+     </div>
+  </div>
+
+</div>
